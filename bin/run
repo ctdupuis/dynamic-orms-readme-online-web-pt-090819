@@ -8,6 +8,7 @@ require_relative "../config/environment.rb"
 hello = Song.new(name: "Hello", album: "25", artist: "Adele")
 puts "song name: " + hello.name
 puts "song album: " + hello.album
+puts "created by: " + hello.artist
 hello.save
 
 happening = Song.new(name: "Happening", album: "Breakfast", artist: "Chiddy Bang")
