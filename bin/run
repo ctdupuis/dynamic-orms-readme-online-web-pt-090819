@@ -9,12 +9,16 @@ hello = Song.new(name: "Hello", album: "25", artist: "Adele", genre: "Pop", rele
 puts "song name: " + hello.name
 puts "song album: " + hello.album
 puts "created by: " + hello.artist
+puts "song genre: " + hello.genre
+puts "released in " + hello.release_year
 hello.save
 
-happening = Song.new(name: "Happening", album: "Breakfast", artist: "Chiddy Bang")
+happening = Song.new(name: "Happening", album: "Breakfast", artist: "Chiddy Bang", genre: "Hip-Hop", release_year: 2011)
 puts "song name: " + happening.name
 puts "song album: " + happening.album
 puts "created by: " + happening.artist
+puts "song genre: " + happening.genre
+puts "released in " + happening.release_year
 happening.save
 
 DB[:conn].execute("SELECT * FROM songs")
