@@ -10,9 +10,10 @@ puts "song name: " + hello.name
 puts "song album: " + hello.album
 hello.save
 
-happening = Song.new(name: "Happening", album: "Breakfast")
+happening = Song.new(name: "Happening", album: "Breakfast", artist: "Chiddy Bang")
 puts "song name: " + happening.name
 puts "song album: " + happening.album
+
 happening.save
 
 DB[:conn].execute("SELECT * FROM songs")
