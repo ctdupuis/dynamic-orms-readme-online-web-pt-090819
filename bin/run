@@ -13,6 +13,7 @@ hello.save
 happening = Song.new(name: "Happening", album: "Breakfast", artist: "Chiddy Bang")
 puts "song name: " + happening.name
 puts "song album: " + happening.album
+puts "created by: " + happening.artist
 
 happening.save
 
